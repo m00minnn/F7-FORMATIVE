@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildlife Wonders | Animal Showcase</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        nature: {
+                            light: '#f5f5f4', // stone-100
+                            dark: '#1c1917',  // stone-900
+                            accent: '#059669', // emerald-600
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-stone-50 text-stone-800 font-sans flex flex-col min-h-screen selection:bg-emerald-600 selection:text-white">
+
+    <nav class="fixed w-full z-50 bg-stone-900/80 backdrop-blur-md shadow-lg border-b border-stone-700 transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-white font-bold text-xl tracking-wider flex items-center gap-2">
+                        <svg class="w-6 h-6 text-emerald-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M4.083 9h1.946c.089-1.546.951-2.847 2.251-3.658L7.05 4.05a1.896 1.896 0 00-2.652 2.652l-.315.315V9zM14 6.832V4a1 1 0 00-1-1 1.896 1.896 0 00-2.652 2.652l-.315.315c1.3.811 2.162 2.112 2.251 3.658h1.946a5.002 5.002 0 00-2.23-7.793z" clip-rule="evenodd" />
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm-1-6.707v-3.586A2.5 2.5 0 0110 5.5a2.5 2.5 0 011 2.207v3.586a1.5 1.5 0 01-2 0z" clip-rule="evenodd" />
+                        </svg>
+                        Wildlife Wonders
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="text-stone-300 hover:text-white transition-colors px-3 py-2 text-sm font-medium">Home</a>
+                        <a href="#animals" class="text-stone-300 hover:text-white transition-colors px-3 py-2 text-sm font-medium">Animals</a>
+                        <a href="#facts" class="text-stone-300 hover:text-white transition-colors px-3 py-2 text-sm font-medium">Fun Facts</a>
+                        <a href="#subscribe" class="bg-emerald-600 hover:bg-emerald-500 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors shadow-md shadow-emerald-900/20">Subscribe</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="relative w-full h-[80vh] flex items-center justify-center bg-[url('img/hero-bg.jpg')] bg-cover bg-center bg-fixed">
+        <div class="absolute inset-0 bg-stone-900/60 mix-blend-multiply"></div>
+        
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto bg-white/10 backdrop-blur-sm p-8 md:p-12 rounded-2xl border border-white/20 shadow-2xl">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-4 tracking-tight drop-shadow-lg">
+                Explore the <span class="text-emerald-400">Wild</span>
+            </h1>
+            <p class="text-lg md:text-2xl text-stone-200 font-light drop-shadow-md mb-8">
+                Journey through Earth's most breathtaking habitats and meet the extraordinary creatures that call them home.
+            </p>
+            <a href="#animals" class="inline-block bg-white text-emerald-800 font-semibold px-8 py-3 rounded-full hover:bg-stone-100 hover:scale-105 transition-all duration-300 shadow-lg">
+                Start Exploring
+            </a>
+        </div>
+    </section>
+
+    <main class="w-full">
+        
+        <section id="animals" class="py-20 bg-stone-50">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl text-stone-800 mb-4 font-bold">Our Remarkable Residents</h2>
+                    <p class="max-w-2xl mx-auto text-stone-600 leading-relaxed text-lg">
+                        From the sweeping savannas of Africa to the dense forests of the Northern Hemisphere, animals adapt and thrive in incredible ways.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-md hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 border border-stone-100">
+                        <div class="overflow-hidden">
+                            <img src="img/lion.jpg" alt="Majestic Lion" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-6 relative">
+                            <div class="absolute -top-6 right-6 bg-emerald-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">Savanna</div>
+                            <h3 class="text-xl text-stone-800 font-bold mb-2">The African Lion</h3>
+                            <p class="text-sm text-stone-600 leading-relaxed">
+                                Known as the "King of the Beasts," lions are highly social felines that live in prides. They are apex predators and symbols of strength.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-md hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 border border-stone-100">
+                        <div class="overflow-hidden">
+                            <img src="img/elephant.jpg" alt="African Elephant" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-6 relative">
+                            <div class="absolute -top-6 right-6 bg-emerald-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">Plains</div>
+                            <h3 class="text-xl text-stone-800 font-bold mb-2">African Elephant</h3>
+                            <p class="text-sm text-stone-600 leading-relaxed">
+                                The largest living land animals on Earth. They exhibit highly intelligent behavior, deep emotional connections, and remarkable memory.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-md hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 border border-stone-100">
+                        <div class="overflow-hidden">
+                            <img src="img/fox.jpg" alt="Red Fox" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-6 relative">
+                            <div class="absolute -top-6 right-6 bg-emerald-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">Forest</div>
+                            <h3 class="text-xl text-stone-800 font-bold mb-2">The Red Fox</h3>
+                            <p class="text-sm text-stone-600 leading-relaxed">
+                                Known for intelligence and adaptability, red foxes thrive globally. They feature striking reddish-brown fur and bushy tails for warmth.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-md hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 border border-stone-100">
+                        <div class="overflow-hidden">
+                            <img src="img/tiger.jpg" alt="Bengal Tiger" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-6 relative">
+                            <div class="absolute -top-6 right-6 bg-emerald-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">Jungle</div>
+                            <h3 class="text-xl text-stone-800 font-bold mb-2">Bengal Tiger</h3>
+                            <p class="text-sm text-stone-600 leading-relaxed">
+                                The largest of the big cats, tigers are solitary hunters characterized by their iconic dark vertical stripes on beautiful reddish-orange fur.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="facts" class="py-20 bg-emerald-900 text-stone-100 relative">
+            <div class="max-w-7xl mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12 text-white">Did You Know?</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
+                    <div class="bg-emerald-800/50 p-8 rounded-2xl backdrop-blur-sm border border-emerald-700 hover:bg-emerald-800 transition-colors">
+                        <div class="bg-emerald-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-3">Lifespans</h4>
+                        <p class="text-emerald-100/80 text-sm">The bowhead whale can live for over 200 years, making it the longest-living mammal on Earth.</p>
+                    </div>
+
+                    <div class="bg-emerald-800/50 p-8 rounded-2xl backdrop-blur-sm border border-emerald-700 hover:bg-emerald-800 transition-colors">
+                        <div class="bg-emerald-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-3">Speed</h4>
+                        <p class="text-emerald-100/80 text-sm">The peregrine falcon is the fastest animal in the world, capable of reaching speeds over 240 mph during a dive.</p>
+                    </div>
+
+                    <div class="bg-emerald-800/50 p-8 rounded-2xl backdrop-blur-sm border border-emerald-700 hover:bg-emerald-800 transition-colors">
+                        <div class="bg-emerald-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-3">Biodiversity</h4>
+                        <p class="text-emerald-100/80 text-sm">More than half of the world's plant and animal species live in tropical rainforests, despite covering only 6% of Earth.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="subscribe" class="py-24 bg-stone-200">
+            <div class="max-w-4xl mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold text-stone-800 mb-4">Stay Wild</h2>
+                <p class="text-stone-600 mb-8">Subscribe to our newsletter for the latest animal discoveries, conservation news, and breathtaking photography directly to your inbox.</p>
+                
+                <form class="flex flex-col sm:flex-row gap-3 justify-center max-w-lg mx-auto">
+                    <input type="email" placeholder="Enter your email address" required class="flex-1 px-5 py-3 rounded-full focus:outline-none focus:ring-2 focus:ring-emerald-500 border border-stone-300 shadow-sm">
+                    <button type="button" class="bg-stone-800 text-white font-semibold px-8 py-3 rounded-full hover:bg-emerald-600 transition-colors shadow-md">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-stone-900 text-stone-400 py-10 w-full border-t border-stone-800">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+            <p>&copy; 2026 Wildlife Wonders. Created for Deployment Exercise.</p>
+            <div class="flex space-x-4">
+                <a href="#" class="hover:text-emerald-400 transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-emerald-400 transition-colors">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
